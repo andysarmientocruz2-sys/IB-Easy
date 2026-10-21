@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ib-easy",
+  "main": "dist/worker.js",
+  "compatibility_date": "2026-10-14",
+  "workers_dev": true,
+  "preview_urls": false,
+  "keep_vars": true,
+  "build": { "command": "npm run build" },
+  "observability": { "enabled": false }
+}

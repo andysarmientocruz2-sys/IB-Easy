@@ -1,0 +1,79 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ib-easy-cloudflare@0.7.0 test
+> npm run build && node --test scripts/*.test.mjs
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> ib-easy-cloudflare@0.7.0 build
+> node scripts/build.mjs
+
+Cloudflare Worker built: dist/worker.js (no secrets included)
+✔ six subject groups contain exactly sixteen unique area hubs with independent calls to action (884.432182ms)
+✔ each area has its own free-topic example in both languages on every tab (3243.069335ms)
+✔ new area content includes developed original lessons, specific practice and feedback (45.023542ms)
+✔ specific free topics resolve locally and never cross subject boundaries (358.925023ms)
+✔ free-topic drafts survive switching subjects and storage reload without leaking between them (196.729989ms)
+✔ personal topics retain area, level, language and difficulty and cannot acquire unrelated practice (843.294658ms)
+✔ opening, section review, marked study and demonstrated practice remain distinct (273.989469ms)
+✔ science numeric exercises validate numerical values, units and progressive reasoning (763.508517ms)
+✔ science investigation records and arts journals persist per topic with safe text (798.036614ms)
+✔ original teaching diagrams have accessible descriptions and no external assets (182.000965ms)
+✔ self-rated spaced review schedules recall without changing scored mastery (205.774169ms)
+✔ new schema validation rejects unsafe maps and preserves all legacy state (48.100776ms)
+✔ new bundled assets are exact and portable build has no remote script dependencies (27.390016ms)
+✔ portable scripts escape HTML sentinels and cannot become visible page text (430.881608ms)
+✔ headings, bold, triple emphasis and paragraphs render as elements (166.225833ms)
+✔ lists, quotes, table, code and escaped code contents (63.138986ms)
+✔ removes scripts, images, events, SVG, iframe, style and clobbering attributes (56.477545ms)
+✔ unsafe and relative links disabled; HTTPS links isolated (34.217843ms)
+✔ missing formatting libraries falls back to escaped readable text (17.957456ms)
+✔ formatting assets are served from this Worker, not third-party CDNs (26.730499ms)
+✔ portable HTML includes its assets and opens the study flow without a server (923.311369ms)
+✔ all sixteen areas offer working bilingual sections without model requests (2978.627758ms)
+✔ a History topic opens information before questions, with chronology and sources (121.674493ms)
+✔ topic search ignores accents and never substitutes unrelated questions (77.860536ms)
+✔ wrong answer is explained, recorded, and cleared after a successful retry (147.029549ms)
+✔ answers remain tied to their topic and complete rounds can restart (296.676699ms)
+✔ reading, bookmarking and flashcards link back to the correct lesson (249.298003ms)
+✔ Paper 1 provides four labelled teaching sources and all five response parts (94.946406ms)
+✔ Paper 2 filters by topic and skill, and self-review never invents a grade (243.414586ms)
+✔ Paper 3 is HL only; unavailable regions remain visibly empty (235.413724ms)
+✔ 2028 does not expose legacy paper practice as current assessment (176.283787ms)
+✔ notes are escaped, separate between courses and not saved without opt-in (191.50256ms)
+✔ optional saving survives reload; disabling removes saved work; clearing resets it (237.934156ms)
+✔ bad stored JSON is recovered without breaking the workspace (47.932141ms)
+✔ weekly tasks can be added, completed and deleted (103.468915ms)
+✔ focus timer pauses, resets and records one completed session (117.068936ms)
+✔ prepared study support renders Markdown and copies readable answers (177.085368ms)
+✔ downloaded work contains current notes and no credential fields (119.836069ms)
+✔ bundled pages, styling and learning data match the current source (24.995688ms)
+✔ workers.dev enabled, preview URLs disabled; no secrets in configuration (1.824355ms)
+✔ school tutor stays paused even if a previous key is configured (1.985875ms)
+✔ cross-origin mentor requests and incorrect methods are rejected (1.120099ms)
+✔ HEAD, missing assets, security headers and versioned assets behave correctly (1.131136ms)
+✔ 83 distinct developed topics preserve legacy IDs and provide 289 relevant questions (282.971496ms)
+✔ every developed lesson opens explanation before quiz and offers three distinct reading levels (5410.575334ms)
+✔ free search handles accents, case and typos and does not relabel results (125.03946ms)
+✔ unavailable custom topic is honest, preserves selected context and never substitutes unrelated practice (171.403145ms)
+✔ personal materials are escaped, searchable, editable and kept only with opt-in (243.015544ms)
+✔ cancelling deletion keeps personal notes; confirming deletes that topic only (102.602874ms)
+✔ import/export round trip restores personal topics, notes, answers, tasks and current storage preference (223.672112ms)
+✔ malformed or hostile backups fail before confirmation without changing current work (125.068846ms)
+✔ legacy v1 data migrates without losing old notes, answers, checklist or tasks (45.076802ms)
+✔ opening a lesson does not mark reviewed; recommendations follow real mistakes (186.598292ms)
+✔ numeric checks use tolerance, accept decimal comma and reject expressions or units (113.908466ms)
+✔ all non-History workshops follow the selected topic and contain its source example (2842.129152ms)
+✔ CAS and EE organisers preserve real user work across topics and reload (179.779144ms)
+✔ difficulty, language and review selection retain topic relevance (108.818414ms)
+✔ History topic practice filters its bank and never substitutes the general dossier (88.353753ms)
+✔ offline state, labels, viewport and responsive rules are present (not a visual browser test) (59.141542ms)
+✔ all newly bundled assets exactly match source files (6.478686ms)
+ℹ tests 60
+ℹ suites 0
+ℹ pass 60
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10926.340953

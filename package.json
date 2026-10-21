@@ -1,0 +1,23 @@
+{
+  "name": "ib-easy-cloudflare",
+  "version": "0.8.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "npm run build && node scripts/preview.mjs",
+    "test": "npm run build && node --test scripts/*.test.mjs",
+    "deploy": "npm test && npx wrangler@4 deploy",
+    "login": "npx wrangler@4 login"
+  },
+  "dependencies": {
+    "dompurify": "3.4.17",
+    "marked": "18.1.1"
+  },
+  "devDependencies": {
+    "jsdom": "30.1.2"
+  }
+}

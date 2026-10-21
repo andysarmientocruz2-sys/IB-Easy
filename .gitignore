@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.wrangler/
+.env*
+.dev.vars*
+!.dev.vars.example
+
+.preview-qa/
+
+.openai/
+
+devpost/learner-profile.md

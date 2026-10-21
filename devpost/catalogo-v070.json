@@ -1,0 +1,535 @@
+{
+  "version": "0.7.0",
+  "topics": 83,
+  "questions": 289,
+  "courses": [
+    {
+      "id": "history",
+      "name": "Historia",
+      "core": false,
+      "topics": [
+        {
+          "id": "ww1",
+          "title": "Primera Guerra Mundial",
+          "questions": 6
+        },
+        {
+          "id": "ww2",
+          "title": "Segunda Guerra Mundial",
+          "questions": 6
+        },
+        {
+          "id": "coldwar",
+          "title": "Guerra Fría",
+          "questions": 6
+        },
+        {
+          "id": "russia",
+          "title": "Revoluciones rusas",
+          "questions": 6
+        },
+        {
+          "id": "cuba",
+          "title": "Revolución cubana",
+          "questions": 6
+        },
+        {
+          "id": "nazi",
+          "title": "Estado nazi",
+          "questions": 6
+        },
+        {
+          "id": "newdeal",
+          "title": "Gran Depresión y New Deal",
+          "questions": 6
+        },
+        {
+          "id": "mexico",
+          "title": "Revolución mexicana",
+          "questions": 6
+        }
+      ]
+    },
+    {
+      "id": "literature",
+      "name": "Lengua y Literatura",
+      "core": false,
+      "topics": [
+        {
+          "id": "literary-effect",
+          "title": "Del recurso al efecto",
+          "questions": 4
+        },
+        {
+          "id": "literary-comparison",
+          "title": "Comparar interpretaciones",
+          "questions": 4
+        },
+        {
+          "id": "literature-irony-midsummer",
+          "title": "Ironía y teatro: Sueño de una noche de verano",
+          "questions": 3
+        },
+        {
+          "id": "literature-narrative-voice",
+          "title": "Voz narrativa y acceso a la información",
+          "questions": 3
+        },
+        {
+          "id": "literature-nonliterary-rhetoric",
+          "title": "Retórica de textos no literarios",
+          "questions": 3
+        }
+      ]
+    },
+    {
+      "id": "math",
+      "name": "Matemáticas AA",
+      "core": false,
+      "topics": [
+        {
+          "id": "math-functions",
+          "title": "Funciones cuadráticas",
+          "questions": 4
+        },
+        {
+          "id": "math-derivatives",
+          "title": "Derivada e interpretación",
+          "questions": 4
+        },
+        {
+          "id": "math-trigonometry",
+          "title": "Trigonometría y ley de senos",
+          "questions": 3
+        },
+        {
+          "id": "math-probability",
+          "title": "Probabilidad condicional",
+          "questions": 3
+        },
+        {
+          "id": "math-integration",
+          "title": "Integración y área",
+          "questions": 3
+        }
+      ]
+    },
+    {
+      "id": "english",
+      "name": "English B",
+      "core": false,
+      "topics": [
+        {
+          "id": "english-opinion",
+          "title": "Opinion → example → reflection",
+          "questions": 4
+        },
+        {
+          "id": "english-evidence",
+          "title": "Hablar de un fragmento",
+          "questions": 4
+        },
+        {
+          "id": "english-reading",
+          "title": "Leer propósito, condiciones e inferencias",
+          "questions": 3
+        },
+        {
+          "id": "english-writing",
+          "title": "Escribir una solicitud con un modelo anotado",
+          "questions": 3
+        },
+        {
+          "id": "english-vocabulary",
+          "title": "Vocabulario, colocaciones y conectores",
+          "questions": 3
+        }
+      ]
+    },
+    {
+      "id": "business",
+      "name": "Gestión Empresarial",
+      "core": false,
+      "topics": [
+        {
+          "id": "business-segment",
+          "title": "Segmentación y propuesta de valor",
+          "questions": 4
+        },
+        {
+          "id": "business-decisions",
+          "title": "Evaluar una decisión empresarial",
+          "questions": 4
+        },
+        {
+          "id": "business-cashflow",
+          "title": "Tesorería: ventas, cobros y financiación",
+          "questions": 3
+        },
+        {
+          "id": "business-break-even",
+          "title": "Punto de equilibrio y margen de seguridad",
+          "questions": 3
+        },
+        {
+          "id": "business-motivation",
+          "title": "Motivación, incentivos y calidad del trabajo",
+          "questions": 3
+        }
+      ]
+    },
+    {
+      "id": "digital",
+      "name": "Sociedad Digital",
+      "core": false,
+      "topics": [
+        {
+          "id": "digital-stakeholders",
+          "title": "Analizar un sistema digital",
+          "questions": 4
+        },
+        {
+          "id": "digital-ai",
+          "title": "IA, sesgo y responsabilidad",
+          "questions": 4
+        },
+        {
+          "id": "digital-privacy",
+          "title": "Privacidad y reconocimiento facial",
+          "questions": 3
+        },
+        {
+          "id": "digital-algorithms",
+          "title": "Algoritmos, clasificación y decisiones",
+          "questions": 3
+        },
+        {
+          "id": "digital-access",
+          "title": "Acceso digital y participación efectiva",
+          "questions": 3
+        }
+      ]
+    },
+    {
+      "id": "cas",
+      "name": "CAS",
+      "core": true,
+      "topics": [
+        {
+          "id": "cas-plan",
+          "title": "Planificar una experiencia",
+          "questions": 4
+        },
+        {
+          "id": "cas-reflection",
+          "title": "Reflexionar con evidencia",
+          "questions": 4
+        },
+        {
+          "id": "cas-teamwork",
+          "title": "Colaborar y resolver desacuerdos",
+          "questions": 3
+        },
+        {
+          "id": "cas-evidence",
+          "title": "CAS: documentar decisiones y aprendizaje",
+          "questions": 3
+        },
+        {
+          "id": "cas-impact",
+          "title": "CAS: necesidades, efectos y continuidad",
+          "questions": 3
+        }
+      ]
+    },
+    {
+      "id": "tok",
+      "name": "Teoría del Conocimiento",
+      "core": true,
+      "topics": [
+        {
+          "id": "tok-knowledge",
+          "title": "De un tema a una pregunta de conocimiento",
+          "questions": 4
+        },
+        {
+          "id": "tok-object",
+          "title": "Objeto, contexto y justificación",
+          "questions": 4
+        },
+        {
+          "id": "tok-perspectives",
+          "title": "Perspectivas y criterios compartidos",
+          "questions": 3
+        },
+        {
+          "id": "tok-evidence",
+          "title": "Evidencia: pertinencia e independencia",
+          "questions": 3
+        },
+        {
+          "id": "tok-arts",
+          "title": "Interpretación y conocimiento en las artes",
+          "questions": 3
+        }
+      ]
+    },
+    {
+      "id": "ee",
+      "name": "Monografía",
+      "core": true,
+      "topics": [
+        {
+          "id": "ee-question",
+          "title": "Delimitar tu investigación",
+          "questions": 4
+        },
+        {
+          "id": "ee-sources",
+          "title": "Leer y registrar fuentes",
+          "questions": 4
+        },
+        {
+          "id": "ee-method",
+          "title": "Método: decisiones que hacen posible responder",
+          "questions": 3
+        },
+        {
+          "id": "ee-structure",
+          "title": "Estructura: una línea de argumentación",
+          "questions": 3
+        },
+        {
+          "id": "ee-revision",
+          "title": "Revisión: comprobar, decidir y aprender",
+          "questions": 3
+        }
+      ]
+    },
+    {
+      "id": "biology",
+      "name": "Biología",
+      "core": false,
+      "topics": [
+        {
+          "id": "biology-cells",
+          "title": "Células: membranas, gradientes y transporte",
+          "questions": 3
+        },
+        {
+          "id": "biology-genetics",
+          "title": "Genética: de la meiosis a las probabilidades",
+          "questions": 3
+        },
+        {
+          "id": "biology-metabolism",
+          "title": "Metabolismo: enzimas, ATP y acoplamiento",
+          "questions": 3
+        },
+        {
+          "id": "biology-ecology",
+          "title": "Ecología: flujos, reservas y muestreo",
+          "questions": 3
+        },
+        {
+          "id": "biology-homeostasis",
+          "title": "Homeostasis: retroalimentación y balance de agua",
+          "questions": 3
+        }
+      ]
+    },
+    {
+      "id": "chemistry",
+      "name": "Química",
+      "core": false,
+      "topics": [
+        {
+          "id": "chemistry-atoms",
+          "title": "Átomos, isótopos y promedios con significado",
+          "questions": 3
+        },
+        {
+          "id": "chemistry-bonds",
+          "title": "Enlaces, geometría y energía: conectar modelos",
+          "questions": 3
+        },
+        {
+          "id": "chemistry-stoichiometry",
+          "title": "Estequiometría: del mol al reactivo limitante",
+          "questions": 3
+        },
+        {
+          "id": "chemistry-equilibrium",
+          "title": "Equilibrio químico: Q, K y principio de Le Châtelier",
+          "questions": 3
+        },
+        {
+          "id": "chemistry-acids",
+          "title": "Ácidos y bases: pH, fuerza y balance de moles",
+          "questions": 3
+        }
+      ]
+    },
+    {
+      "id": "physics",
+      "name": "Física",
+      "core": false,
+      "topics": [
+        {
+          "id": "physics-measurement",
+          "title": "Medición: unidades, incertidumbre y decisiones",
+          "questions": 3
+        },
+        {
+          "id": "physics-motion",
+          "title": "Movimiento rectilíneo y circular: cambiar rapidez o dirección",
+          "questions": 3
+        },
+        {
+          "id": "physics-energy",
+          "title": "Trabajo, energía y potencia: cerrar el balance",
+          "questions": 3
+        },
+        {
+          "id": "physics-waves",
+          "title": "Ondas y circuitos: relacionar cambios, energía y medidas",
+          "questions": 3
+        },
+        {
+          "id": "physics-thermal",
+          "title": "Energía térmica y átomos: elegir el modelo adecuado",
+          "questions": 3
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "name": "CDES · Ciencias del Deporte, el Ejercicio y la Salud",
+      "core": false,
+      "topics": [
+        {
+          "id": "sports-anatomy",
+          "title": "Anatomía funcional: articulaciones, fuerzas y movimiento",
+          "questions": 3
+        },
+        {
+          "id": "sports-energy",
+          "title": "Ejercicio: aportes energéticos que se superponen",
+          "questions": 3
+        },
+        {
+          "id": "sports-cardiorespiratory",
+          "title": "Sistema cardiorrespiratorio: transportar y utilizar oxígeno",
+          "questions": 3
+        },
+        {
+          "id": "sports-training",
+          "title": "Entrenamiento: adaptación, medición e inferencia",
+          "questions": 3
+        },
+        {
+          "id": "sports-nutrition",
+          "title": "Nutrición: funciones, porciones y evidencia",
+          "questions": 3
+        }
+      ]
+    },
+    {
+      "id": "ess",
+      "name": "SAS · Sistemas Ambientales y Sociedades",
+      "core": false,
+      "topics": [
+        {
+          "id": "ess-systems",
+          "title": "Sistemas ambientales: límites, flujos y decisiones",
+          "questions": 3
+        },
+        {
+          "id": "ess-biodiversity",
+          "title": "Biodiversidad: medir sin reducirla a una cifra",
+          "questions": 3
+        },
+        {
+          "id": "ess-water",
+          "title": "Agua: de una señal de contaminación a una explicación",
+          "questions": 3
+        },
+        {
+          "id": "ess-climate",
+          "title": "Clima: atribución, escenarios y decisiones",
+          "questions": 3
+        },
+        {
+          "id": "ess-resources",
+          "title": "Recursos: comparar servicios y ciclos de vida",
+          "questions": 3
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "name": "Música",
+      "core": false,
+      "topics": [
+        {
+          "id": "music-elements",
+          "title": "Elementos musicales: describir relaciones audibles",
+          "questions": 3
+        },
+        {
+          "id": "music-rhythm",
+          "title": "Ritmo: pulso, agrupación y desplazamiento",
+          "questions": 3
+        },
+        {
+          "id": "music-harmony",
+          "title": "Armonía: acordes, bajo y conducción de voces",
+          "questions": 3
+        },
+        {
+          "id": "music-context",
+          "title": "Música y contexto: función, mediación y evidencia",
+          "questions": 3
+        },
+        {
+          "id": "music-creation",
+          "title": "Composición: desarrollar una idea y documentar revisiones",
+          "questions": 3
+        }
+      ]
+    },
+    {
+      "id": "visualarts",
+      "name": "Artes Visuales",
+      "core": false,
+      "topics": [
+        {
+          "id": "art-elements",
+          "title": "Elementos visuales: del inventario al argumento",
+          "questions": 3
+        },
+        {
+          "id": "art-color",
+          "title": "Uso del color: relaciones, contraste y propósito",
+          "questions": 3
+        },
+        {
+          "id": "art-techniques",
+          "title": "Técnicas: probar materiales para resolver una intención",
+          "questions": 3
+        },
+        {
+          "id": "art-comparison",
+          "title": "Comparar obras: criterios compartidos y límites de evidencia",
+          "questions": 3
+        },
+        {
+          "id": "art-portfolio",
+          "title": "Portafolio: seleccionar evidencia de un proceso propio",
+          "questions": 3
+        }
+      ]
+    }
+  ],
+  "newNumericExercises": 10
+}
