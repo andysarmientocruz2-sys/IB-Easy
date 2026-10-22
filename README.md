@@ -1,4 +1,4 @@
-# IB Easy — COAR IB Companion · 0.8.0
+# IB Easy — COAR IB Companion · 0.8.1
 
 Plataforma local para trece asignaturas y tres componentes del núcleo: 83 temas y 289 preguntas. Proyecto independiente, sin afiliación al IB, MINEDU o COAR. Material educativo original; no son exámenes oficiales ni cobertura completa del currículo.
 
@@ -16,7 +16,9 @@ npm run preview
 
 Abre http://127.0.0.1:4173. Ctrl+C detiene el servidor. `npm run build` genera el Worker y el HTML portátil. No publica nada.
 
-## Mejoras de 0.8.0
+## Mejoras de 0.8.1
+
+- Inicio guiado con tres acciones claras: abrir una lección real de demostración, buscar en toda la biblioteca o saltar a las asignaturas. La demostración no carga progreso ficticio ni marca dominio.
 
 - Ruta guiada de 10, 25 o 45 minutos planificados: comprender, recordar, aplicar y reflexionar. Permite retomar y guardar hasta 200 rutas; es un registro personal, no una medición de tiempo ni de dominio.
 - Buscador de toda la biblioteca y temas personales, con filtros por grupo de áreas y sugerencias que explican su motivo.
@@ -93,7 +95,7 @@ Esta entrega es local. No modifica Cloudflare ni envía nada a Devpost.
 
 ## English quick start
 
-IB Easy 0.8.0 is an independent study companion for IB and COAR students. It contains 16 areas, 83 prepared topics and 289 multiple-choice questions, plus learner-authored topics and flashcards. It is not affiliated with the IB, MINEDU or COAR and does not cover the full curriculum.
+IB Easy 0.8.1 is an independent study companion for IB and COAR students. It contains 16 areas, 83 prepared topics and 289 multiple-choice questions, plus learner-authored topics and flashcards. It is not affiliated with the IB, MINEDU or COAR and does not cover the full curriculum.
 
 Requirements: Node.js 24 or later. Clone this repository, then run:
 
@@ -107,7 +109,7 @@ Open http://127.0.0.1:4173. The build generates `dist/IB-Easy-COAR.html`, a self
 
 The interface, summaries and prepared questions support Spanish and English. Extended explanations remain in Spanish with a translation notice. Guided study routes and personal flashcards are self-reported activities, not official grades. Optional browser storage, JSON export/import and deletion are available in Settings. The hosted website and local files use separate storage origins.
 
-The last full test run passed 73/73 tests; see `devpost/pruebas-v080.txt`. Cloudflare deployment requires your own authenticated account; see `ACTUALIZAR.md`. Publishing this source repository does not deploy the Worker. The Gemini/model tutor remains disabled.
+The last full test run passed 74/74 tests. Cloudflare deployment requires your own authenticated account; see `ACTUALIZAR.md`. Publishing this source repository does not deploy the Worker. The Gemini/model tutor remains disabled.
 
 Planning documents are in `devpost/scope.md`, `devpost/prd.md` and `devpost/spec.md`. They document an earlier phase; `devpost/entrega-v080.md` describes the current implementation. Development used AI assistance. No claim is made here that the Devpost Learn Skill Pack was run; that history must be confirmed separately.
 

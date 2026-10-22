@@ -13,6 +13,13 @@ test('discovery finds different relevant topics across subjects and filters grou
  x.input('#library-search','qzxxyy desconocido');assert.match(x.one('#library-results').textContent,/No hay contenido suficiente/);
  x.click('[data-studio="group"][data-group=""]');assert.equal([...x.d.querySelectorAll('.area-group')].filter(el=>!el.hidden).length,6);
 });
+test('quick start exposes three clear paths and opens a real lesson without fake mastery',async t=>{
+ const x=await ui(t);persist(x);assert.equal(x.d.querySelectorAll('.quick-start-grid article').length,3);assert.match(x.one('.quick-start').textContent,/EMPIEZA AQUÍ/i);
+ x.click('[data-studio="focus-search"]');assert.equal(x.d.activeElement.id,'library-search');
+ x.click('[data-studio="focus-subjects"]');assert.ok(x.d.activeElement.closest('.course-card'));
+ x.click('[data-studio="demo"]');assert.equal(x.one('h1').textContent,'Biología');assert.equal(x.one('.lesson-header h2').textContent,x.w.IBStudy.catalog().find(t=>t.id==='biology-cells').title.es);
+ const data=saved(x);assert.ok(data.openedAt['biology-cells']);assert.equal(data.read.length,0);assert.equal(Object.keys(data.answers).length,0);assert.equal(data.activeSession,null);
+});
 test('guided route persists, requires steps and reflection, and never awards mastery or read status',async t=>{
  const x=await ui(t);persist(x);x.one('#session-topic').value='biology-cells';x.one('#session-duration').value='10';submit(x,'#session-form');assert.match(x.one('.active-route').textContent,/10 MIN/);assert.equal(saved(x).activeSession.topic,'biology-cells');
  x.click('[data-studio="finish"]');assert.match(x.one('#route-status').textContent,/cuatro pasos/);

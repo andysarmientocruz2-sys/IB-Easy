@@ -1,7 +1,7 @@
-# Guion de demostración · IB Easy 0.8.0 (120 segundos)
+# Guion de demostración · IB Easy 0.8.1 (120 segundos)
 
-- 0–15 s: «IB Easy es un proyecto educativo independiente para estudiar con claridad. Tiene 83 temas, 289 preguntas y 16 áreas, incluidas Ciencias, Artes y el núcleo». Mostrar Inicio.
-- 15–35 s: Iniciar una ruta de 25 minutos de Biología. Mostrar los cuatro pasos y aclarar que son autoevaluación del proceso.
+- 0–15 s: «IB Easy es un proyecto educativo independiente para estudiar con claridad. Tiene 83 temas, 289 preguntas y 16 áreas, incluidas Ciencias, Artes y el núcleo». Mostrar Inicio y la sección «Empieza aquí».
+- 15–35 s: Pulsar «Abrir demostración» para entrar a la lección real de membranas. Después mostrar una ruta de 25 minutos y aclarar que registra autoevaluación del proceso.
 - 35–55 s: Abrir el índice y modo lectura; consultar el diagrama, vocabulario y ejemplo. Cambiar el tamaño del texto.
 - 55–75 s: Usar el campo propio de Biología. Buscar membranas; después introducir un tema inexistente para mostrar la limitación honesta y el aporte de apuntes.
 - 75–95 s: Abrir Repasar, crear una tarjeta propia con fuente, revelar y programar. Explicar que las tarjetas no están verificadas ni generan una calificación.

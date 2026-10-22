@@ -1,4 +1,4 @@
-# Abre IB Easy 0.8.0
+# Abre IB Easy 0.8.1
 
 1. Descarga y extrae el ZIP completo en una carpeta nueva.
 2. Abre `ib-easy-cloudflare/dist/IB-Easy-COAR.html` con Chrome o Edge.
@@ -26,7 +26,9 @@ El HTML local no actualiza la web pública. Para desarrollo o publicación poste
 
 La búsqueda es local. Cuando no existe contenido, la aplicación lo informa; no genera explicaciones ni preguntas nuevas con IA. Las explicaciones largas en inglés siguen pendientes y se avisa dentro de la aplicación.
 
-## Prueba las mejoras de 0.8.0
+## Prueba las mejoras de 0.8.1
+
+En Inicio, usa **Empieza aquí** para abrir la demostración de Biología, enfocar el buscador general o saltar a las asignaturas. Abrir la demostración registra una apertura real, pero no marca la lección como revisada ni demuestra dominio.
 
 1. En Inicio elige un tema y pulsa Comenzar ruta de estudio. Registra los cuatro pasos y una reflexión para finalizar.
 2. Busca un concepto en Explora la biblioteca y filtra un grupo de áreas.
