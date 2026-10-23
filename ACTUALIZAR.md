@@ -1,4 +1,4 @@
-# Probar y actualizar IB Easy 0.8.1
+# Probar y actualizar IB Easy 0.8.2
 
 ## Preparar
 
@@ -18,9 +18,9 @@ Abre http://127.0.0.1:4173. Ctrl+C detiene el servidor. Si el puerto está ocupa
 
 Prueba una lección, sus preguntas, una búsqueda conocida, un tema inexistente con apuntes, un cálculo y la exportación/importación. Revisa ES/EN, teclado y ventana estrecha. Confirma contenido y convocatoria con tu docente. Las pruebas automáticas no sustituyen revisión visual o pedagógica.
 
-## Publicar solo cuando lo apruebes
+## Publicar en tu cuenta de Cloudflare
 
-Este apartado NO se ha ejecutado desde ChatGPT. `npm run deploy` reemplaza la versión pública del Worker configurado. Confirma carpeta, cuenta y destino antes de decidir publicarlo.
+La actualización fue solicitada, pero no pudo ejecutarse desde ChatGPT porque no hay una sesión autenticada de Cloudflare. `npm run deploy` reemplaza la versión pública del Worker configurado. Confirma carpeta, cuenta y destino antes de decidir publicarlo.
 
 Tras detener la vista local:
 
@@ -36,7 +36,7 @@ Solo después de aprobar la publicación:
 npm run deploy
 ```
 
-Ejecuta pruebas y después Wrangler. Abre la URL devuelta y comprueba la versión. La dirección usada anteriormente era https://ib-easy.ibeasy-andy.workers.dev; el resultado de tu despliegue será la referencia final. Puedes recargar forzadamente, pero no borres el almacenamiento del sitio si quieres conservar progreso.
+Ejecuta pruebas y después Wrangler. Abre la URL devuelta y comprueba que el pie de página muestre v0.8.2. La dirección usada anteriormente era https://ib-easy.ibeasy-andy.workers.dev; el resultado de tu despliegue será la referencia final. Puedes recargar forzadamente, pero no borres el almacenamiento del sitio si quieres conservar progreso.
 
 [Documentación de Cloudflare consultada](https://developers.cloudflare.com/workers/wrangler/commands/workers/): `wrangler deploy` despliega el Worker, por lo que no se usa para probar localmente.
 

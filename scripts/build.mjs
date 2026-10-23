@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
+const projectLicense = await readFile(path.join(root, 'LICENSE'), 'utf8');
 let output = await readFile(path.join(root, 'worker/index.js'), 'utf8');
 const assets = {
   __IB_EASY_HTML__: 'web/index.html',
@@ -39,7 +40,7 @@ for (const [placeholder, filename] of Object.entries(assets)) {
   output = output.replace(placeholder, () => value);
 }
 await mkdir(path.join(root, 'dist'), { recursive: true });
-await writeFile(path.join(root, 'dist/worker.js'), output);
+await writeFile(path.join(root, 'dist/worker.js'), '/*\n' + projectLicense + '\n*/\n' + output);
 // A portable copy for reviewing the design without installing or running Node.
 // This HTML is not the deployment artifact; Cloudflare uses worker.js.
 let portable = source.__IB_EASY_HTML__;
@@ -71,8 +72,8 @@ const inline = {
 };
 for (const [route, [tag, body]] of Object.entries(inline)) {
   const target = tag === 'style'
-    ? '<link rel="stylesheet" href="' + route + '?v=080">'
-    : '<script src="' + route + '?v=080"></script>';
+    ? '<link rel="stylesheet" href="' + route + '?v=082">'
+    : '<script src="' + route + '?v=082"></script>';
   if (!portable.includes(target)) throw new Error('Missing portable asset: ' + route);
   // Escape literal HTML sentinels, including closing document tags that preview
   // live-reload servers otherwise inject into inside a library's template string.
@@ -82,5 +83,5 @@ for (const [route, [tag, body]] of Object.entries(inline)) {
     : body;
   portable = portable.replace(target, () => '<' + tag + '>' + safeBody + '</' + tag + '>');
 }
-await writeFile(path.join(root, 'dist/IB-Easy-COAR.html'), portable);
+await writeFile(path.join(root, 'dist/IB-Easy-COAR.html'), '<!--\n' + projectLicense + '\n-->\n' + portable);
 console.log('Cloudflare Worker built: dist/worker.js (no secrets included)');

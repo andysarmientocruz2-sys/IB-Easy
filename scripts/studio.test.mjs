@@ -6,6 +6,24 @@ const saved=x=>{x.w.dispatchEvent(new x.w.Event('pagehide'));return JSON.parse(x
 const persist=x=>{x.click('[data-view="settings"]');x.change('#persist',true);x.click('[data-view="home"]');};
 const card=(x,front='¿Qué es difusión?',back='Movimiento neto a favor del gradiente.')=>{x.input('#card-front',front);x.input('#card-back',back);x.input('#card-source','Mis apuntes, sección 2');submit(x,'#card-form');};
 
+test('subject shortcut focuses a visible filtered card and honours reduced motion',async t=>{
+ const x=await ui(t);const group=x.w.IBLearning.groups.find(g=>g.courses.includes('physics'));x.click('[data-studio="group"][data-group="'+group.id+'"]');
+ let scrolled;x.w.HTMLElement.prototype.scrollIntoView=function(options){scrolled={element:this,options};};x.w.matchMedia=()=>({matches:true});
+ x.click('[data-studio="focus-subjects"]');assert.equal(x.d.activeElement.closest('.area-group').hidden,false);assert.ok(group.courses.includes(x.d.activeElement.dataset.course));assert.equal(scrolled.element,x.d.activeElement);assert.equal(scrolled.options.behavior,'auto');
+ x.click('[data-studio="focus-search"]');assert.equal(x.d.activeElement.id,'library-search');assert.equal(scrolled.options.behavior,'auto');
+ x.w.matchMedia=()=>({matches:false});x.click('[data-studio="focus-subjects"]');assert.equal(scrolled.options.behavior,'smooth');
+});
+test('independent branding and version are visible and navigation keeps accessible names in both languages',async t=>{
+ const x=await ui(t);assert.match(x.one('.logo').textContent,/PROYECTO ESTUDIANTIL/);assert.doesNotMatch(x.one('.logo').textContent,/COAR EDITION/);assert.match(x.one('footer').textContent,/v0\.8\.2/);
+ for(const lang of ['es','en']){x.change('#language',lang);for(const b of x.d.querySelectorAll('.nav-link'))assert.ok(b.getAttribute('aria-label')?.trim());x.click('[data-view="settings"]');assert.equal(x.one('[data-view="settings"]').getAttribute('aria-current'),'page');assert.match(x.one('[data-view="settings"]').getAttribute('aria-label'),lang==='es'?/Preferencias/:/Settings/);x.click('[data-view="home"]');}
+ assert.match(x.one('.logo').textContent,/STUDENT PROJECT/);assert.match(x.one('footer').textContent,/Not affiliated/);
+});
+test('opening the demo preserves existing notes, answers, personal cards and active study routes',async t=>{
+ const x=await ui(t);persist(x);x.one('#session-topic').value='music-elements';submit(x,'#session-form');x.input('#lesson-note','Conservar mis notas');x.tab('review');card(x,'¿Qué es timbre?','Cualidad sonora.');
+ x.tab('study');x.click('[data-mode="quiz"]');x.click('[data-q="0"][data-choice="0"]');x.click('[data-view="home"]');const before=saved(x);x.click('[data-studio="demo"]');const after=saved(x);
+ for(const field of ['notes','answers','read','bookmarks','personalCards','activeSession','customTopics'])assert.deepEqual(after[field],before[field],field+' must be preserved');assert.equal(after.topic,'biology-cells');
+});
+
 test('discovery finds different relevant topics across subjects and filters grouped hubs',async t=>{
  const x=await ui(t);x.input('#library-search','MEMBRNA');assert.ok(x.one('#library-results [data-topic="biology-cells"]'));assert.equal(x.d.querySelector('#library-results [data-topic="physics-motion"]'),null);
  x.input('#library-search','movimiento circular fuerza centrípeta');assert.ok(x.one('#library-results [data-topic="physics-motion"]'));

@@ -146,8 +146,8 @@
       const b=e.target.closest('[data-studio]');if(!b)return;const s=state(),a=b.dataset.studio;
       if(a==='open')route(b.dataset.topic,b.dataset.course);
       else if(a==='demo'){route('biology-cells','biology');}
-      else if(a==='focus-search'){const target=document.getElementById('library-search');target?.scrollIntoView?.({block:'center',behavior:'smooth'});target?.focus();}
-      else if(a==='focus-subjects'){const target=document.querySelector('.area-group .course-card [data-action="course"],.area-group .course-card [data-action="saved-topic"]');target?.scrollIntoView?.({block:'center',behavior:'smooth'});target?.focus();}
+      else if(a==='focus-search'){const target=document.getElementById('library-search');target?.focus({preventScroll:true});target?.scrollIntoView?.({block:'center',behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}
+      else if(a==='focus-subjects'){const target=document.querySelector('.area-group:not([hidden]) .course-card [data-action="course"],.area-group:not([hidden]) .course-card [data-action="saved-topic"]');target?.focus({preventScroll:true});target?.scrollIntoView?.({block:'center',behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}
       else if(a==='group'){selectedGroup=b.dataset.group;ctx.render();document.querySelector('[data-studio="group"][data-group="'+selectedGroup+'"]')?.focus();}
       else if(a==='start-current')start(s.topic,25);
       else if(a==='resume'&&s.activeSession)route(s.activeSession.topic,s.activeSession.course);

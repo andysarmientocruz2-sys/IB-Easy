@@ -1,0 +1,4 @@
+IB Easy 0.8.2 — npm test
+Construcción y suite completa. Resultado real del último proceso, exit code undefined.
+
+undefined
