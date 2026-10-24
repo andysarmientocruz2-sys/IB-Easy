@@ -1,4 +1,4 @@
-# IB Easy — COAR IB Companion · 0.8.2
+# IB Easy — COAR IB Companion · 0.9.0
 
 Plataforma local para trece asignaturas y tres componentes del núcleo: 83 temas y 289 preguntas. Proyecto independiente, sin afiliación al IB, MINEDU o COAR. Material educativo original; no son exámenes oficiales ni cobertura completa del currículo.
 
@@ -16,7 +16,11 @@ npm run preview
 
 Abre http://127.0.0.1:4173. Ctrl+C detiene el servidor. `npm run build` genera el Worker y el HTML portátil. No publica nada.
 
-## Mejoras de 0.8.2
+## Mejoras de 0.9.0
+
+- Nuevo panel de entrada en las 16 áreas: orientación propia, acceso al último tema, métricas reales y accesos a práctica, repaso y cuaderno.
+- 16 retos de exploración originales y bilingües, uno por área, con autoevaluación. Se conservan los 83 temas y 289 preguntas.
+- Historia queda sola y Electivos reúne nueve asignaturas; actualizado en menú, inicio y filtros.
 
 - Identidad estudiantil independiente, licencia MIT, etiquetas accesibles en navegación móvil y enfoque que respeta el filtro de áreas y la preferencia de movimiento reducido. Inicio guiado con tres acciones claras: abrir una lección real de demostración, buscar en toda la biblioteca o saltar a las asignaturas. La demostración no carga progreso ficticio ni marca dominio.
 
@@ -47,7 +51,7 @@ Ciencias incorpora fichas de investigación por tema. Química y Física incluye
 
 Hay cuatro diagramas originales: membranas, movimiento circular, ritmo y composición visual. No son fotografías, fuentes históricas ni resultados experimentales.
 
-El inicio agrupa las áreas en Lenguas, Ciencias Sociales, Matemáticas, Ciencias, Artes y núcleo. Cada tarjeta permite continuar el último tema de su área o estudiar otro.
+El inicio agrupa las áreas en Lenguas, Historia, Matemáticas, Electivos y núcleo. Electivos reúne Gestión, Sociedad Digital, SAS, Biología, CDES, Química, Física, Música y Artes Visuales; es la organización de esta aplicación, no una clasificación oficial del IB. Cada tarjeta permite continuar el último tema de su área o estudiar otro.
 
 ## Temas libres
 
@@ -87,7 +91,7 @@ Las referencias de contexto no respaldan cada detalle de un caso ficticio. La re
 
 - `LEEME-PRIMERO.md`: recorrido rápido.
 - `ACTUALIZAR.md`: publicar en Cloudflare únicamente cuando lo decidas.
-- `devpost/entrega-v082.md`: cambios, pruebas y límites.
+- `devpost/entrega-v090.md`: cambios, pruebas y límites.
 - `devpost/fuentes.md`: referencias.
 - `devpost/guion-demo.md`: guion bilingüe para grabar; las capturas reales están en `devpost/capturas/v082/`.
 
@@ -95,7 +99,7 @@ Esta entrega actualiza el código y el HTML portátil. Cloudflare requiere auten
 
 ## English quick start
 
-IB Easy 0.8.2 is an independent study companion for IB and COAR students. It contains 16 areas, 83 prepared topics and 289 multiple-choice questions, plus learner-authored topics and flashcards. It is not affiliated with the IB, MINEDU or COAR and does not cover the full curriculum.
+IB Easy 0.9.0 is an independent study companion for IB and COAR students. It contains 16 areas, 83 prepared topics and 289 multiple-choice questions, plus learner-authored topics and flashcards. It is not affiliated with the IB, MINEDU or COAR and does not cover the full curriculum.
 
 Requirements: Node.js 24 or later. Clone this repository, then run:
 
@@ -109,8 +113,8 @@ Open http://127.0.0.1:4173. The build generates `dist/IB-Easy-COAR.html`, a self
 
 The interface, summaries and prepared questions support Spanish and English. Extended explanations remain in Spanish with a translation notice. Guided study routes and personal flashcards are self-reported activities, not official grades. Optional browser storage, JSON export/import and deletion are available in Settings. The hosted website and local files use separate storage origins.
 
-The last full test run passed 78/78 tests. Cloudflare deployment requires your own authenticated account; see `ACTUALIZAR.md`. Publishing this source repository does not deploy the Worker. The Gemini/model tutor remains disabled.
+The last full test run passed 80/80 tests. Cloudflare deployment requires your own authenticated account; see `ACTUALIZAR.md`. Publishing this source repository does not deploy the Worker. The Gemini/model tutor remains disabled.
 
-Planning documents are in `devpost/scope.md`, `devpost/prd.md` and `devpost/spec.md`. They document an earlier phase; `devpost/entrega-v082.md` describes the current implementation. Development used AI assistance. No claim is made here that the Devpost Learn Skill Pack was run; that history must be confirmed separately.
+Planning documents are in `devpost/scope.md`, `devpost/prd.md` and `devpost/spec.md`. They document an earlier phase; `devpost/entrega-v090.md` describes the current implementation. Development used AI assistance. No claim is made here that the Devpost Learn Skill Pack was run; that history must be confirmed separately.
 
 Third-party library notices are retained in `licenses/`. Original project code and original educational content are available under the MIT license in `LICENSE`. Linked third-party materials remain subject to their respective licenses.

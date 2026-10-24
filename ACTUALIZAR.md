@@ -1,4 +1,4 @@
-# Probar y actualizar IB Easy 0.8.2
+# Probar y actualizar IB Easy 0.9.0
 
 ## Preparar
 
@@ -36,7 +36,7 @@ Solo después de aprobar la publicación:
 npm run deploy
 ```
 
-Ejecuta pruebas y después Wrangler. Abre la URL devuelta y comprueba que el pie de página muestre v0.8.2. La dirección usada anteriormente era https://ib-easy.ibeasy-andy.workers.dev; el resultado de tu despliegue será la referencia final. Puedes recargar forzadamente, pero no borres el almacenamiento del sitio si quieres conservar progreso.
+Ejecuta pruebas y después Wrangler. Abre la URL devuelta y comprueba que el pie de página muestre v0.9.0. La dirección usada anteriormente era https://ib-easy.ibeasy-andy.workers.dev; el resultado de tu despliegue será la referencia final. Puedes recargar forzadamente, pero no borres el almacenamiento del sitio si quieres conservar progreso.
 
 [Documentación de Cloudflare consultada](https://developers.cloudflare.com/workers/wrangler/commands/workers/): `wrangler deploy` despliega el Worker, por lo que no se usa para probar localmente.
 

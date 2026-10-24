@@ -14,7 +14,7 @@ test('subject shortcut focuses a visible filtered card and honours reduced motio
  x.w.matchMedia=()=>({matches:false});x.click('[data-studio="focus-subjects"]');assert.equal(scrolled.options.behavior,'smooth');
 });
 test('independent branding and version are visible and navigation keeps accessible names in both languages',async t=>{
- const x=await ui(t);assert.match(x.one('.logo').textContent,/PROYECTO ESTUDIANTIL/);assert.doesNotMatch(x.one('.logo').textContent,/COAR EDITION/);assert.match(x.one('footer').textContent,/v0\.8\.2/);
+ const x=await ui(t);assert.match(x.one('.logo').textContent,/PROYECTO ESTUDIANTIL/);assert.doesNotMatch(x.one('.logo').textContent,/COAR EDITION/);assert.match(x.one('footer').textContent,/v0\.9\.0/);
  for(const lang of ['es','en']){x.change('#language',lang);for(const b of x.d.querySelectorAll('.nav-link'))assert.ok(b.getAttribute('aria-label')?.trim());x.click('[data-view="settings"]');assert.equal(x.one('[data-view="settings"]').getAttribute('aria-current'),'page');assert.match(x.one('[data-view="settings"]').getAttribute('aria-label'),lang==='es'?/Preferencias/:/Settings/);x.click('[data-view="home"]');}
  assert.match(x.one('.logo').textContent,/STUDENT PROJECT/);assert.match(x.one('footer').textContent,/Not affiliated/);
 });
@@ -29,7 +29,7 @@ test('discovery finds different relevant topics across subjects and filters grou
  x.input('#library-search','movimiento circular fuerza centrípeta');assert.ok(x.one('#library-results [data-topic="physics-motion"]'));
  const group=x.w.IBLearning.groups.find(g=>g.courses.includes('physics'));x.click('[data-studio="group"][data-group="'+group.id+'"]');assert.equal([...x.d.querySelectorAll('.area-group')].filter(el=>!el.hidden).length,1);
  x.input('#library-search','qzxxyy desconocido');assert.match(x.one('#library-results').textContent,/No hay contenido suficiente/);
- x.click('[data-studio="group"][data-group=""]');assert.equal([...x.d.querySelectorAll('.area-group')].filter(el=>!el.hidden).length,6);
+ x.click('[data-studio="group"][data-group=""]');assert.equal([...x.d.querySelectorAll('.area-group')].filter(el=>!el.hidden).length,5);
 });
 test('quick start exposes three clear paths and opens a real lesson without fake mastery',async t=>{
  const x=await ui(t);persist(x);assert.equal(x.d.querySelectorAll('.quick-start-grid article').length,3);assert.match(x.one('.quick-start').textContent,/EMPIEZA AQUÍ/i);

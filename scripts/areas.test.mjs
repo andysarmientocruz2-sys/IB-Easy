@@ -7,8 +7,8 @@ const added=['biology','chemistry','physics','sports','ess','music','visualarts'
 const snapshot=x=>{x.w.dispatchEvent(new x.w.Event('pagehide'));return JSON.parse(x.w.localStorage.getItem(KEY));};
 const submit=x=>x.one('#custom-search-form').dispatchEvent(new x.w.Event('submit',{bubbles:true,cancelable:true}));
 
-test('six subject groups contain exactly sixteen unique area hubs with independent calls to action',async t=>{
- const x=await ui(t);assert.equal(x.d.querySelectorAll('.area-group').length,6);
+test('five subject groups contain exactly sixteen unique area hubs with independent calls to action',async t=>{
+ const x=await ui(t);assert.equal(x.d.querySelectorAll('.area-group').length,5);
  const ids=[...x.d.querySelectorAll('.course-card')].map(c=>c.dataset.course);assert.equal(new Set(ids).size,16);
  for(const id of ids){const card=x.one('.course-card[data-course="'+id+'"]');assert.equal(card.tagName,'ARTICLE');assert.equal(card.querySelectorAll('button button').length,0);assert.ok(card.querySelector('[data-action="area-custom"]'));assert.match(card.textContent,/pendientes o por corregir/);}
  for(const id of added){x.click('.course-card[data-course="'+id+'"] [data-action="area-custom"]');assert.equal(x.d.activeElement.id,'custom-query');assert.equal(x.one('h1').textContent,x.w.IBLearning.courses.find(c=>c.id===id).name.es);x.click('[data-view="home"]');}

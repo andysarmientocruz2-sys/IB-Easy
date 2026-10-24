@@ -13,10 +13,9 @@
   for(const [id,es,en,icon,des,den] of added){D.courses.push({id,name:L(es,en),icon,desc:L(des,den),core:false});D.other[id]=[];}
   D.groups=[
     {id:'languages',name:L('Lenguas','Languages'),courses:['literature','english']},
-    {id:'social',name:L('Ciencias Sociales','Social Sciences'),courses:['history','business','digital']},
+    {id:'history',name:L('Historia','History'),courses:['history']},
     {id:'mathematics',name:L('Matemáticas','Mathematics'),courses:['math']},
-    {id:'sciences',name:L('Ciencias','Sciences'),courses:['biology','chemistry','physics','sports','ess']},
-    {id:'arts',name:L('Artes y electivos','Arts and electives'),courses:['music','visualarts']},
+    {id:'electives',name:L('Electivos','Electives'),courses:['business','digital','ess','biology','sports','chemistry','physics','music','visualarts']},
     {id:'core',name:L('Núcleo del IB','IB core'),courses:['tok','cas','ee']}
   ];
   const examples={

@@ -72,8 +72,8 @@ const inline = {
 };
 for (const [route, [tag, body]] of Object.entries(inline)) {
   const target = tag === 'style'
-    ? '<link rel="stylesheet" href="' + route + '?v=082">'
-    : '<script src="' + route + '?v=082"></script>';
+    ? '<link rel="stylesheet" href="' + route + '?v=090">'
+    : '<script src="' + route + '?v=090"></script>';
   if (!portable.includes(target)) throw new Error('Missing portable asset: ' + route);
   // Escape literal HTML sentinels, including closing document tags that preview
   // live-reload servers otherwise inject into inside a library's template string.
